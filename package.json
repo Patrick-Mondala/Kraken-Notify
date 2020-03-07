@@ -4,17 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "server:debug": "nodemon --inspect app.js",
     "server": "nodemon app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "frontend-install": "npm install --prefix frontend",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server:debug\" \"npm run frontend\""
   },
   "author": "Patrick-Mondala",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "btoa": "^1.2.1",
+    "concurrently": "^5.1.0",
+    "discord.js": "^12.0.1",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.2",
+    "node-fetch": "^2.6.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "validator": "^12.2.0"
