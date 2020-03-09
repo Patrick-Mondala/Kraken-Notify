@@ -5,8 +5,8 @@ const { catchAsync } = require("../../frontend/src/util/discord_api_util");
 
 const router = express.Router();
 
-const CLIENT_ID = require("../../config/keys").CLIENT_ID;
-const CLIENT_SECRET = require("../../config/keys").CLIENT_SECRET;
+const CLIENT_ID = require("../../frontend/src/components/discord_login/client").CLIENT_ID;
+const CLIENT_SECRET = require("../../frontend/src/components/discord_login/client").CLIENT_SECRET;
 const redirect = encodeURIComponent(
   `http://localhost:${process.env.PORT || 5000}/api/discord/callback`
 );
@@ -27,28 +27,7 @@ router.get(
       }
     );
     const json = await response.json();
-    res.redirect(`/api/discord/auth?token=${json.access_token}`);
-    localStorage.setItem("discordToken", json.access_token);
-  })
-);
-
-//setup logout button tomorrow
-router.get(
-  "/auth",
-  catchAsync(async (req, res) => {
-    if (!req.query.token) throw new Error("NoTokenProvided");
-    const token = req.query.token;
-    const response = await fetch(
-      `https://discordapp.com/api/users/@me`,
-      {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      }
-    );
-    const json = await response.json();
-    return res.json(json);
+    res.redirect(`http://localhost:3000/#/auth?token=${json.access_token}`);
   })
 );
 

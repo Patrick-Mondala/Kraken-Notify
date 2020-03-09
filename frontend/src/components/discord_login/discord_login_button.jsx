@@ -2,7 +2,7 @@ import React from "react";
 
 require("./discord_login.css");
 
-const CLIENT_ID = "685679232348586013";
+const CLIENT_ID = require("./client").CLIENT_ID;
 const redirect = encodeURIComponent(
   `http://localhost:${process.env.PORT || 5000}/api/discord/callback`
 );
@@ -18,5 +18,4 @@ const DiscordLoginButton = () => {
     </div>
   );
 }
-
 export default DiscordLoginButton;

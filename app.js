@@ -26,21 +26,6 @@ app.use(express.static("frontend/src/public"));
 app.use("/api/users", users);
 app.use("/api/discord", discord);
 
-app.use((err, req, res, next) => {
-  switch (err.message) {
-    case "NoCodeProvided":
-      return res.status(400).send({
-        status: "ERROR",
-        error: err.message
-      });
-    default:
-      return res.status(500).send({
-        status: "ERROR",
-        error: err.message
-      });
-  }
-});
-
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
