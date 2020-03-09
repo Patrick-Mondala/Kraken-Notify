@@ -1,0 +1,74 @@
+div.features-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4%;
+}
+
+ul.left-list, ul.right-list {
+  display: flex;
+  flex-direction: column;
+  color: #e5e5e4;
+  font-size: calc(4px + 2vw);
+}
+
+ul > li.separator {
+  background-color: #dddddc;
+  height: 2px;
+  width: 25%;
+  border-radius: 50px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+ul.left-list > li > div.description, ul.right-list > li > div.description {
+  padding: 5%;
+}
+
+ul.left-list > li > div, ul.right-list > li > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul.left-list > li > div.icon, ul.right-list > li > div.icon {
+  width: calc(30px + 5vw);
+  height: calc(30px + 5vw);
+  display: flex;
+  align-items: center;
+  background-color: #d22b37;
+  border-radius: 50%;
+  border: 2px solid #6e1920;
+}
+
+ul.left-list > li > div.icon > img, ul.right-list > li > div.icon > img {
+  width: 70%;
+  height: 70%;
+}
+
+ul.left-list {
+  align-items: flex-start;
+}
+
+ul.left-list > li, ul.right-list > li {
+  display: flex;
+  align-items: center;
+}
+
+ul.right-list {
+  align-items: flex-end;
+}
+
+ul.right-list > li > div {
+  align-items: flex-end;
+}
+
+ul.left-list > li > div > span:first-of-type,
+ul.right-list > li > div > span:first-of-type {
+  color: #ce2a36;
+}
+
+div.description > span {
+  display: block;
+  white-space: nowrap;
+}

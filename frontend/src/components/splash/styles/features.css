@@ -1,5 +1,8 @@
 div.features {
-  width: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 div.features > h2 {
@@ -16,8 +19,9 @@ div.header {
 }
 
 div.header > img {
-  height: 60%;
-  width: auto;
+  margin-top: 15px;
+  height: 40px;
+  width: 40px;
 }
 
 div.header > span {
@@ -27,7 +31,7 @@ div.header > span {
 div.white-bar {
   margin-top: 15%;
   height: 0.5em;
-  width: 40%;
+  width: 70%;
   border-radius: 50px;
   background-color: #e5e5e5;
 }
@@ -40,21 +44,21 @@ div.header-text {
 }
 
 div.header-text > span:first-child {
-  font-size: calc(56px + 1vw);
-  letter-spacing: 3px;
+  font-size: calc(56px + 2vw);
+  letter-spacing: 6px;
   color: #1b1d1a;
   text-shadow: -2px 0 #1d1f1c, 0 2px #1d1f1c, 2px 0 #1d1f1c, 0 -2px #1d1f1c;
 }
 
 div.header-text > span:nth-of-type(2) {
-  font-size: calc(36px + 1vw);
+  font-size: calc(36px + 2vw);
   letter-spacing: 8px;
   font-weight: bold;
   color: #a60b25;
   margin-top: -18%;
 }
 
-div.features > h2 > div.description {
+div.features > h2 > div.description, div.features > div.description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,9 +67,10 @@ div.features > h2 > div.description {
   font-size: 24px;
 }
 
-div.features > h2 > div.description > span {
+div.features > h2 > div.description > span, div.features > div.description > span {
   color: #a60b25;
   font-weight: bold;
+  font-style: italic;
   font-size: 26px;
-  margin-left: 1%
+  margin: 0 1%;
 }

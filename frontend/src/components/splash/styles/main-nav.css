@@ -39,7 +39,7 @@ div.left-panel-content > a {
 
 div.left-panel-content > span {
   margin-top: 1%;
-  font-size: calc(6px + 0.8vw);
+  font-size: calc(4px + 0.8vw);
 }
 
 div.right-panel {
@@ -75,7 +75,7 @@ nav.main-nav {
 }
 
 nav.main-nav > a {
-  padding: 12px 0;
+  padding: calc(2px + 0.7vw) 0;
   background-color: #222520;
   border-radius: 20px;
   border: 2px solid #4f0f15;
@@ -91,7 +91,7 @@ nav.main-nav > a > span {
 div.red-bar {
   margin-left: 1em;
   width: 90%;
-  height: 1.5em;
+  height: calc(1em + 0.8vw);
   background-color: #51141c;
-  margin-top: -32px;
+  margin-top: calc(-22px - 0.8vw);
 }
