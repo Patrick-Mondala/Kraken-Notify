@@ -1,0 +1,30 @@
+.waves-container {
+  width: 100%;
+  margin-top: calc(-110px - 7vw);;
+  z-index: 2;
+}
+
+.waves-border-container {
+  width: 100%;
+  margin-top: calc(-130px - 7vw);
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: calc(120px + 7vw);
+}
+
+/* Animation */
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}

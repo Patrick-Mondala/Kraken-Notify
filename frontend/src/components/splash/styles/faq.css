@@ -1,4 +1,5 @@
 div.faq {
+  margin-top: 15%;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,6 @@ div.faq > h2 {
 }
 
 div.faq-white-bar {
-  margin-top: 15%;
   height: 0.5em;
   width: 35%;
   border-radius: 50px;

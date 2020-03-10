@@ -14,7 +14,7 @@ const toolsImg = require("./images/tools.png");
 const truckImg = require("./images/truck.png");
 
 const Features = () => (
-  <div className="features">
+  <div className="features" id="features">
     <FeaturesHeader />
     <FeaturesList />
     <div className="description">and so<span>much</span>more...</div>

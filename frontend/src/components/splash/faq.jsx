@@ -10,7 +10,7 @@ const worldImg = require("./images/world.png");
 const supportImg = require("./images/support.png");
 
 const Faq = () => (
-  <div className="faq">
+  <div className="faq" id="faq">
     <FaqHeader />
     <FaqList />
   </div>

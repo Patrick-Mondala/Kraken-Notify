@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Link } from "react-router-hash-link";
 
 require("./styles/main-nav.css");
 
@@ -15,12 +16,12 @@ const MainNav = () => (
       <a href="#/splash">
         <span>socials</span>
       </a>
-      <a href="#/splash">
+      <Link to="/splash#features">
         <span>features</span>
-      </a>
-      <a href="#/splash">
+      </Link>
+      <Link to="/splash#faq">
         <span>faq</span>
-      </a>
+      </Link>
     </nav>
     <div className="red-bar"></div>
   </div>

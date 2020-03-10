@@ -1,0 +1,54 @@
+div.contact {
+  margin-top: 15%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.contact > h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+div.contact-white-bar {
+  height: 0.5em;
+  width: 35%;
+  border-radius: 50px;
+  background-color: #e5e5e5;
+}
+
+div.contact > h2 > div.header > div.header-text > span:nth-of-type(2) {
+  font-size: calc(36px + 2vw);
+  letter-spacing: 8px;
+  font-weight: bold;
+  color: #a60b25;
+  margin-top: -20%;
+}
+
+div.email-container {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+div.icon {
+  width: calc(30px + 3vw);
+  height: calc(30px + 3vw);
+  display: flex;
+  align-items: center;
+  background-color: #d22b37;
+  border-radius: 50%;
+  border: 2px solid #6e1920;
+  margin-right: 2%;
+}
+
+span.email {
+  color: #f2f2f2;
+  font-size: calc(10px + 0.8vw);
+  letter-spacing: 3px;
+}
