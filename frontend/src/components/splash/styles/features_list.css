@@ -36,6 +36,7 @@ ul.left-list > li > div.icon, ul.right-list > li > div.icon {
   height: calc(30px + 5vw);
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #d22b37;
   border-radius: 50%;
   border: 2px solid #6e1920;
