@@ -15,9 +15,9 @@ div.header-nav {
 div.logo {
   margin: 0 5%;
   width: 25%;
-  min-width: 120px;
-  max-width: 120px;
-  min-height: 120px;
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
   display: flex;
   justify-content: center;
   background-color: #9d232c;

@@ -40,7 +40,9 @@ const LeftPanel = () => (
 const RightPanel = () => (
   <div className="right-panel">
     <div className="top-aside">the<span>best</span>sauce to cook with</div>
-    <img src={PhoneImage} alt=""></img>
+    <div className="phone-container">
+      <img src={PhoneImage} alt=""></img>
+    </div>
   </div>
 );
 

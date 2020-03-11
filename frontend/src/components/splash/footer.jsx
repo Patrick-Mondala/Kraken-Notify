@@ -25,8 +25,12 @@ const Footer = () => (
       </div>
     </div>
     <div className="social-links">
-      <a href="#/splash"></a>
-      <a href="#/splash"></a>
+      <a href="#/splash">
+        <i className="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/KrakenNotify">
+        <i className="fab fa-twitter"></i>
+      </a>
     </div>
   </footer>
 );

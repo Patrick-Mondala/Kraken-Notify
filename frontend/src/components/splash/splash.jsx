@@ -5,9 +5,9 @@ import Features from "./features";
 import Faq from "./faq";
 import Contact from "./contact";
 import Footer from "./footer";
+import Waves from "./waves";
 
 require("./styles/splash.css");
-require("./styles/wave.css");
 
 const Splash = () => (
   <div className="splash">
@@ -17,45 +17,9 @@ const Splash = () => (
     <Faq />
     <Contact />
     <Footer />
-    <div className="waves-container">
-      <svg
-        className="waves"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-        shapeRendering="auto"
-      >
-        <defs>
-          <path
-            id="gentle-wave"
-            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-          />
-        </defs>
-        <g className="parallax">
-          <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(210,44,56,1)" />
-        </g>
-      </svg>
-    </div>
-    <div className="waves-border-container">
-      <svg
-        className="waves"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-        shapeRendering="auto"
-      >
-        <defs>
-          <path
-            id="gentle-wave"
-            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-          />
-        </defs>
-        <g className="parallax">
-          <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(74,24,28,1)" />
-        </g>
-      </svg>
+    <Waves />
+    <div className="still-water">
+      <div className="water-color"></div>
     </div>
   </div>
 );

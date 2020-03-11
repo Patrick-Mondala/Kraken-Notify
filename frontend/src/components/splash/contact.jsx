@@ -9,7 +9,7 @@ const Contact = () => (
     <ContactHeader />
     <div className="email-container">
       <div className="icon">
-        <img src="" alt=""></img>
+        <i className="far fa-envelope"></i>
       </div>
       <span className="email">hello@krakennotify.com</span>
     </div>

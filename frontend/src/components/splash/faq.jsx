@@ -56,7 +56,7 @@ const FaqList = () => (
         <div className="answer">
           <span>
             Unfortunately we don't sell lifetime memberships. The only way to
-            acquire a copy is by winning a giveaway in the discord or twitter.
+            acquire a copy is by winning a giveaway in the discord or on twitter.
           </span>
         </div>
       </li>
