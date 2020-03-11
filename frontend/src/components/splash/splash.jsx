@@ -18,9 +18,6 @@ const Splash = () => (
     <Contact />
     <Footer />
     <Waves />
-    <div className="still-water">
-      <div className="water-color"></div>
-    </div>
   </div>
 );
 

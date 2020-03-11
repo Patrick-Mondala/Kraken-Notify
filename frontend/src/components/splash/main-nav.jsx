@@ -23,7 +23,6 @@ const MainNav = () => (
         <span>faq</span>
       </Link>
     </nav>
-    <div className="red-bar"></div>
   </div>
 );
 
