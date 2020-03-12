@@ -21,7 +21,7 @@ div.logo {
   align-items: center;
   background-color: #9d232c;
   border-radius: 50%;
-  border: 5px solid #711a21;
+  border: calc(4px + 0.1vw) solid #711a21;
 }
 
 div.logo > img {
