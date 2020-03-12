@@ -145,7 +145,7 @@ nav.main-nav > a {
   padding: calc(2px + 0.7vw) 0;
   background-color: #222520;
   border-radius: calc(20px + 0.7vw);
-  border: calc(1px + 0.3vw) solid #4f0f15;
+  border: calc(1px + 0.2vw) solid #4f0f15;
   box-shadow: 0 2px 2px rgba(0,0,0,0.07);
   z-index: 5;
   width: 20%;
