@@ -1,5 +1,5 @@
 div.main-nav-container {
-  margin-top: 1%;
+  margin-top: 5%;
   width: 80%;
   max-width: 1100px;
   display: flex;
@@ -42,6 +42,7 @@ div.left-panel-content > a {
   background: linear-gradient(#02ff02, #00b300);
   padding: 3% 5%;
   border-radius: 20px;
+  margin-top: 5%;
 }
 
 div.left-panel-content > span {
@@ -58,35 +59,39 @@ div.right-panel, div.phone-container {
   align-items: center;
 }
 
+div.phone-container {
+  margin-top: 5%;
+}
+
 div.phone-container > img {
   position: relative;
   width: 65%;
 }
 
 div.phone-container:hover > img {
-  animation: shake 4s infinite;
+  animation: shake 3.5s infinite;
 }
 
 @keyframes shake {
   0% {
     left: 0;
-    -webkit-filter: blur(1px);
+    -webkit-filter: blur(0.1px);
   }
   2.5% {
-    left: 40px;
-    -webkit-filter: blur(2px);
+    left: 10px;
+    -webkit-filter: blur(0.2px);
   }
   5% {
-    left: -40px;
-    -webkit-filter: blur(3px);
+    left: -10px;
+    -webkit-filter: blur(0.3px);
   }
   7.5% {
-    left: 40px;
-    -webkit-filter: blur(4px);
+    left: 10px;
+    -webkit-filter: blur(0.4px);
   }
   10% {
-    left: -40px;
-    -webkit-filter: blur(5px);
+    left: -10px;
+    -webkit-filter: blur(0.5px);
   }
   12.5% {
     left: 0;
@@ -105,14 +110,24 @@ div.top-aside {
 }
 
 div.top-aside > span {
-  color: #8e1826;
-  transition: all .15s ease-in-out;
-  font-weight: bold;
-  margin: 0 1%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
 }
 
-div.top-aside:hover > span {
-  font-size: calc(10px + 2vw);
+div.top-aside > span > span {
+  display: flex;
+  width: 14%;
+  min-width: 40px;
+  margin: 0 1% 1px;
+  justify-content: center;
+  transition: all .15s ease-in-out;
+}
+
+div.top-aside > span > span:hover {
+  width: 19%;
 }
 
 nav.main-nav {
@@ -123,14 +138,14 @@ nav.main-nav {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 3;
-  margin-top: -3vw;
+  margin-top: -2vw;
 }
 
 nav.main-nav > a {
   padding: calc(2px + 0.7vw) 0;
   background-color: #222520;
-  border-radius: 20px;
-  border: 2px solid #4f0f15;
+  border-radius: calc(20px + 0.7vw);
+  border: calc(1px + 0.3vw) solid #4f0f15;
   box-shadow: 0 2px 2px rgba(0,0,0,0.07);
   z-index: 5;
   width: 20%;

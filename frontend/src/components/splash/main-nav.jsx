@@ -5,6 +5,7 @@ require("./styles/main-nav.css");
 
 const TopImage = require("./images/top.png");
 const PhoneImage = require("./images/phone.png");
+const bestImage = require("./images/best.png");
 
 const MainNav = () => (
   <div className="main-nav-container">
@@ -38,7 +39,7 @@ const LeftPanel = () => (
 
 const RightPanel = () => (
   <div className="right-panel">
-    <div className="top-aside">the<span>best</span>sauce to cook with</div>
+    <div className="top-aside"><span>the<span><img src={bestImage}></img></span>sauce to cook with</span></div>
     <div className="phone-container">
       <img src={PhoneImage} alt=""></img>
     </div>

@@ -38,7 +38,6 @@ div.question > span {
 div.question > span:last-of-type {
   font-size: calc(2px + 4vw);
   font-weight: normal;
-  width: 3%;
 }
 
 ul.faq-list > li > div.question > img {
