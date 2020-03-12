@@ -1,6 +1,7 @@
 div.features {
   margin-top: 15%;
   width: 80%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +32,7 @@ div.header > span {
 }
 
 div.white-bar {
-  height: 0.5em;
+  height: 5px;
   width: 35%;
   border-radius: 50px;
   background-color: #e5e5e5;
@@ -53,10 +54,10 @@ div.header-text > span:first-child {
 
 div.header-text > span:nth-of-type(2) {
   font-size: calc(36px + 2vw);
-  letter-spacing: 8px;
+  letter-spacing: 10px;
   font-weight: bold;
   color: #a60b25;
-  margin-top: -18%;
+  margin-top: -24%;
 }
 
 div.features > h2 > div.description, div.features > div.description {

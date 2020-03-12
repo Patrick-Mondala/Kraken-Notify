@@ -8,6 +8,7 @@ div.features-container {
 ul.left-list, ul.right-list {
   display: flex;
   flex-direction: column;
+  width: 50%;
   color: #e5e5e4;
   font-size: calc(4px + 2vw);
 }
@@ -15,7 +16,7 @@ ul.left-list, ul.right-list {
 ul > li.separator {
   background-color: #dddddc;
   height: 2px;
-  width: 25%;
+  width: 15% !important;
   border-radius: 50px;
   margin-top: 5%;
   margin-bottom: 3%;
@@ -54,6 +55,15 @@ ul.left-list {
 ul.left-list > li, ul.right-list > li {
   display: flex;
   align-items: center;
+  width: 100%;
+}
+
+ul.left-list > li {
+  justify-content: flex-start;
+}
+
+ul.right-list > li {
+  justify-content: flex-end;
 }
 
 ul.right-list {

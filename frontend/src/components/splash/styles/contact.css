@@ -14,18 +14,23 @@ div.contact > h2 {
 }
 
 div.contact-white-bar {
-  height: 0.5em;
+  height: 5px;
   width: 35%;
   border-radius: 50px;
   background-color: #e5e5e5;
 }
 
+div.header-text {
+  font-family: BebasNeue;
+  margin-top: 2%;
+}
+
 div.contact > h2 > div.header > div.header-text > span:nth-of-type(2) {
   font-size: calc(36px + 2vw);
-  letter-spacing: 8px;
+  letter-spacing: 5px;
   font-weight: bold;
   color: #a60b25;
-  margin-top: -20%;
+  margin-top: -27%;
 }
 
 div.email-container {
@@ -52,6 +57,7 @@ span.email {
   color: #f2f2f2;
   font-size: calc(10px + 0.8vw);
   letter-spacing: 3px;
+  cursor: pointer;
 }
 
 div.icon > i {

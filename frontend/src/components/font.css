@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/BebasNeueRegular.woff") format("opentype");
+}
+
+@font-face {
   font-family: Montserrat;
   font-weight: bold;
   src: url("../fonts/Montserrat-Bold.woff") format("opentype");

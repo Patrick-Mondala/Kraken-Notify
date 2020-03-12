@@ -2,6 +2,7 @@ import React from 'react';
 
 require("./styles/contact.css");
 
+const copy = require('clipboard-copy');
 const tripleDots = require("./images/3dots.png");
 
 const Contact = () => (
@@ -11,7 +12,12 @@ const Contact = () => (
       <div className="icon">
         <i className="far fa-envelope"></i>
       </div>
-      <span className="email">hello@krakennotify.com</span>
+      <span id="email" onClick={() => {
+        copy("hello@krakennotify.com");
+        const emailSpan = document.getElementById("email");
+        emailSpan.textContent = 'Copied to clipboard!';
+        setTimeout(() => (emailSpan.textContent = "hello@krakennotify.com"), 2000);
+      }} className="email">hello@krakennotify.com</span>
     </div>
   </div>
 );

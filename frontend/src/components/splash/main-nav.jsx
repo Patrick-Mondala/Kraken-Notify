@@ -13,9 +13,9 @@ const MainNav = () => (
       <RightPanel />
     </div>
     <nav className="main-nav">
-      <a href="#/splash">
+      <Link to="/splash#socials">
         <span>socials</span>
-      </a>
+      </Link>
       <Link to="/splash#features">
         <span>features</span>
       </Link>

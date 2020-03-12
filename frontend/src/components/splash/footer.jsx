@@ -24,7 +24,7 @@ const Footer = () => (
         </a>
       </div>
     </div>
-    <div className="social-links">
+    <div className="social-links" id="socials">
       <a href="#/splash">
         <i className="fab fa-instagram"></i>
       </a>

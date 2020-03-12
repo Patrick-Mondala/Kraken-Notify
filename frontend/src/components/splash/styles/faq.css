@@ -6,6 +6,12 @@ div.faq {
   align-items: center;
 }
 
+div.faq-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 div.faq > h2 {
   display: flex;
   flex-direction: column;
@@ -14,7 +20,7 @@ div.faq > h2 {
 }
 
 div.faq-white-bar {
-  height: 0.5em;
+  height: 5px;
   width: 35%;
   border-radius: 50px;
   background-color: #e5e5e5;
@@ -32,8 +38,8 @@ div.header > span {
 
 div.faq > h2 > div.header > div.header-text > span:nth-of-type(2) {
   font-size: calc(36px + 2vw);
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   font-weight: bold;
   color: #a60b25;
-  margin-top: -45%;
+  margin-top: -63%;
 }
